@@ -1,0 +1,20 @@
+backend:
+  name: github
+  branch: master
+  repo: ItalianCoders/italiancoders-netlify
+  base_url: https://italiancoders-netlify-auth.now.sh
+  auth_endpoint: auth
+
+publish_mode: editorial_workflow
+
+media_folder: static/img
+public_folder: "public/img"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "markdown"}
